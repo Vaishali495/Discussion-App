@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion App</title>
+    <!-- css --> 
+    <link rel="stylesheet" href="style.css">
+    <!-- script -->
+    <script src="script.js" defer></script>
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- icons cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <!-- heading -->
+        <div id="heading">
+            <h1 class="adjust-size">Discussion Portal</h1>
+        </div>
+    </header>
+    <main>
+        <div id="main-div" class="flex">
+
+            <!-- LeftPane -->
+            <div class="left-pane">
+
+                <div class="button-container flex">
+                    <button class ="button-1" >New Question form</button>
+                    <input type="text" id="search"  placeholder="search questions.." autocomplete="off">
+                </div>
+            
+                <div class="ques-container">
+                    <ul id="ques-container">
+                        <!-- <li class="list flex" >
+                            <div class="ques-list">
+                                <h4>English</h4>
+                                <p>How many alphabets are there in english</p>
+                            </div>
+                            <span class="time-display">few seconds ago</span>
+                            <img class="star" id="empty-star" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Empty_Star.svg/1024px-Empty_Star.svg.png" alt="emptyStar">
+                        </li>
+                        <li class="list flex" >
+                            <div class="ques-list">
+                                <h4>Hindi</h4>
+                                <p>How many alphabets are there in hindi</p>
+                            </div>
+                            <span class="time-display">few seconds ago</span>
+                            <img class="star" id="empty-star" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Empty_Star.svg/1024px-Empty_Star.svg.png" alt="emptyStar">
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- RightPane -->
+            <div class="right-pane">
+
+                <div class="right-page-1">
+                    <h2 id="rigth-head">Welcome to Discussion Portal !</h2>
+                    <p>Enter a subject and question to started</p>
+                    <input type="text" placeholder="Subject"id="input-sub" autocomplete="off"><br>
+                    <textarea name="question" id="input-ques" placeholder="Question"></textarea><br>
+                    <button type="submit" class="btn-style" id="submit-btn" >Submit</button>
+                 </div> 
+
+                 <div class="right-page-2">
+                    <h3 id="sub-head">Question</h3>
+
+                    <div class="sub-div">
+                        <!-- <div class="res-div">
+                            <h4>Name 1</h4>
+                            <p>response 1</p>
+                        </div>-->
+                    </div>
+
+                    <button class="btn-style" id="resolve-btn" >Resolve</button>
+
+                    <h3 id="sub-head">Response</h3>
+
+                    <div class="sub-div response-div">
+                        <!-- <div class="response-container flex">
+                            <div class="res-div">
+                                <h4>Name 2</h4>
+                                <p>response 2</p>
+                            </div>
+                            <i class="ri-thumb-up-line icon" id="thumb-up"></i>
+                            <p class="count">0</p>
+                            <i class="ri-thumb-down-line icon" id="thumb-down"></i>
+                            <p class="count">0</p>
+                        </div> -->
+                    </div>
+
+                    <h3 id="sub-head">Add Response</h3>
+                    <input type="text" id="input-name" placeholder="Enter Name"><br>
+                    <textarea name="comment" id="add-comment" placeholder="Enter Comment"></textarea><br>
+                    <button type="submit" id="add-response-btn" class="btn-style">Submit</button>
+                 </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
